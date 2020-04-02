@@ -32,7 +32,7 @@ img{
 /*End global*/
 
 
-/*Start Reusable*/ 
+/*Start Reusable*/
 .container{
 	width: 90%;
 	max-width: 120rem;
@@ -56,7 +56,7 @@ img{
 	font-size: 1.6rem;
 	font-weight: 300;
 }
-.section-heading h1::before, 
+.section-heading h1::before,
 .section-heading h1::after{
 	content: '';
 	position: absolute;
@@ -259,7 +259,7 @@ li{
 }
 .skill{
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	padding: 2rem;
@@ -297,7 +297,7 @@ li{
 	margin-bottom: 0;
 }
 .porfolio-description{
-	flex: 1;	
+	flex: 1;
 }
 /*.portfolio-img portfolio-img{
 	width: 50rem;
@@ -377,7 +377,7 @@ li{
 	left: -8rem;
 	height: 1.5rem;
 	width: 1.5rem;
-	background-color: #313534;	
+	background-color: #313534;
 }
 /*End timeline*/
 
@@ -453,7 +453,7 @@ li{
 		margin: 2rem 0;
 	}
 	.nav-link{
-		font-size: 3.5rem; 
+		font-size: 3.5rem;
 	}
 
 	.about-heading h1{
@@ -481,7 +481,7 @@ li{
 		margin: 0 0 0 auto;
 	}
 	.timeline .date::before{
-		left: -20rem;		
+		left: -20rem;
 	}
 	.timeline .date::after{
 		left: -5.9rem;
