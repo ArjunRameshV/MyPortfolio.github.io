@@ -87,6 +87,11 @@ header{
 	width: 100%;
 	height: 100vh;
 }
+#particles {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
 .top-nav{
 	width: 100%;
 	height: 100vh;
@@ -224,23 +229,7 @@ li{
 .about-details{
 	flex: 1;
 }
-.social-media{
-	margin-top: 5rem;
-	margin-bottom: 5rem;
-}
-.social-media i{
-	font-size: 5rem;
-	transition: color 650ms;
-}
-.fa-facebook:hover{
-	color:#4267b2;
-}
-.fa-twitter:hover{
-	color:#38a1f3;
-}
-.fa-dribbble:hover{
-	color:#ea4c89;
-}
+
 /*End about*/
 
 /*Start services*/
@@ -384,6 +373,26 @@ li{
 /*Start contact*/
 .contact {
   background: radial-gradient(farthest-corner at 35vw 25vh, #cc0052 0.5%, #3f2c41 100%);
+}
+.social-media{
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+}
+.social-media i{
+	font-size: 5rem;
+	transition: color 650ms;
+}
+.fa-facebook:hover{
+	color:#4267b2;
+}
+.fa-hackerrank:hover{
+	color:#00b300;
+}
+.fa-github:hover{
+	color:#333;
+}
+.fa-envelope:hover{
+	color:#ff0000;
 }
 /*End contact*/
 

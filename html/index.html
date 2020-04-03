@@ -6,9 +6,10 @@
 	<title>Blog</title>
 	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="../css/designs.css">
 		<link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
@@ -16,6 +17,8 @@
 <!--The scripts needed -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="../js/jquery.particleground.js"></script>
+<script src="../js/demo.js"></script>
 <script src="../js/main.js"></script>
 
 
@@ -35,7 +38,7 @@
 				<a href="#about" class="nav-link">About</a>
 			</li>
 			<li>
-				<a href="#services" class="nav-link">Blog</a>
+				<a href="#services" class="nav-link">Skills</a>
 			</li>
 			<li>
 				<a href="#portfolio" class="nav-link">Portfolio</a>
@@ -48,9 +51,11 @@
 			</li>
 		</ul>
 	</nav>
-	<div class="landing-text">
-		<h1>Arjun R</h1>
-		<h6>Student</h6>
+	<div id="particles">
+		<div class="landing-text" >
+			<h1>Arjun R</h1>
+			<h6>Student</h6>
+		</div>
 	</div>
 </header>
 <!-- A navigation bar and above title  -->
@@ -70,25 +75,6 @@
 			I love reading books, novels over philosophy most of the times. I also love to write articles
 			and poems. Competitive programming certainly has my attention and algorithm focused tasks also
 			spike my interests.</p>
-			<div class="social-media">
-				<ul class="nav-list">
-					<li>
-						<a href="#" class="icon-link">
-							<i class="fab fa-facebook"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="icon-link">
-							<i class="fab fa-twitter"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="icon-link">
-							<i class="fab fa-dribbble"></i>
-						</a>
-					</li>
-				</ul>
-			</div>
 		</div>
 	</div>
 </section>
@@ -96,35 +82,8 @@
 <section class="services" id="services">
 	<div class="container">
 		<div class="section-heading">
-			<h1>Services</h1>
+			<h1>Skills</h1>
 			<h6>What I can do</h6>
-			<!-- <div class="my-skills"> -->
-				<!-- <div class="skill" data-aos="fade-in" data-aos-delay = "300">
-					<dir class="icon-container">
-						<i class="fas fa-layer-group"></i>
-					</dir>
-					<h1>Web Design</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-					<p>sed do eiusmodtempor incididunt ut labore et dolore magna aliqua.</p>
-				</div>
-
-				<div class="skill" data-aos="fade-in" data-aos-delay = "600">
-					<dir class="icon-container">
-						<i class="fas fa-code"></i>
-					</dir>
-					<h1>Web Design</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-					<p>sed do eiusmodtempor incididunt ut labore et dolore magna aliqua.</p>
-				</div>
-
-				<div class="skill" data-aos="fade-in" data-aos-delay = "900">
-					<dir class="icon-container">
-						<i class="fas fa-chart-bar"></i>
-					</dir>
-					<h1>Web Design</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-					<p>sed do eiusmodtempor incididunt ut labore et dolore magna aliqua.</p>
-				</div> -->
 				<!-- ---------------------------------------  -------------------------- -->
 				<section class="cards">
 				  <div class="flip-card-container" style="--hue: 220">
@@ -133,26 +92,32 @@
 				      <div class="card-front">
 				        <figure>
 				          <div class="img-bg"></div>
-				          <img src="https://images.unsplash.com/photo-1486162928267-e6274cb3106f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Brohm Lake">
-				          <figcaption>Brohm Lake</figcaption>
+				          <img src="../img/flip2.jpg" alt="">
+									<div class="card-front-text1">
+										<h2>Electives</h2>
+										<h2>and</h2>
+										<h2>Online</h2>
+										<h2>Courses</h2>
+									</div>
 				        </figure>
-
-				        <ul>
-				          <li>Detail 1</li>
-				          <li>Detail 2</li>
-				          <li>Detail 3</li>
-				          <li>Detail 4</li>
-				          <li>Detail 5</li>
-				        </ul>
 				      </div>
 
 				      <div class="card-back">
 				        <figure>
 				          <div class="img-bg"></div>
-				          <img src="https://images.unsplash.com/photo-1486162928267-e6274cb3106f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Brohm Lake">
-				        </figure>
+									<img src="../img/flip2.jpg" alt="">
+							  </figure>
 
-				        <button>Book</button>
+								<ul>
+				          <li>Python for Computer Vision
+										with OpenCV and Deep Learning
+									  (Udemy)</li>
+				          <li>Advanced Data Structures
+										and Algorithm</li>
+				          <li>Analytics and Systems of
+										Big Data</li>
+				        </ul>
+				        <!-- <button>Book</button> -->
 
 				        <div class="design-container">
 				          <span class="design design--1"></span>
@@ -177,26 +142,50 @@
 				      <div class="card-front">
 				        <figure>
 				          <div class="img-bg"></div>
-				          <img src="https://images.unsplash.com/photo-1545436864-cd9bdd1ddebc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Image 2">
-				          <figcaption>Légende</figcaption>
+				          <img src="../img/flip3.jpg" alt="">
+									<div class="card-front-text2">
+										<h2>Language</h2>
+										<h2>Proficiency</h2>
+									</div>
 				        </figure>
-
-				        <ul>
-				          <li>Detail 1</li>
-				          <li>Detail 2</li>
-				          <li>Detail 3</li>
-				          <li>Detail 4</li>
-				          <li>Detail 5</li>
-				        </ul>
 				      </div>
 
 				      <div class="card-back">
 				        <figure>
 				          <div class="img-bg"></div>
-				          <img src="https://images.unsplash.com/photo-1545436864-cd9bdd1ddebc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="image-2">
-				        </figure>
+				         <img src="../img/flip3.jpg" alt="">
+								</figure>
 
-				        <button>Book</button>
+								<ul>
+				          <li><p class="bar-text">C++</p>
+											<div class="bar-container">
+											  <div class="bar-skills bar-cplus">70%</div>
+											</div>
+									</li>
+									<li><p class="bar-text">OpenCV</p>
+											<div class="bar-container">
+											  <div class="bar-skills bar-opencv">55%</div>
+											</div>
+									</li>
+				          <li>
+										<p class="bar-text">Java</p>
+											<div class="bar-container">
+											  <div class="bar-skills bar-java">45%</div>
+											</div>
+									</li>
+									<li><p class="bar-text">Javascript</p>
+											<div class="bar-container">
+											  <div class="bar-skills bar-js">35%</div>
+											</div>
+									</li>
+				          <li>
+										<p class="bar-text">Python</p>
+											<div class="bar-container">
+											  <div class="bar-skills bar-python">35%</div>
+											</div>
+									</li>
+
+				        </ul>
 
 				        <div class="design-container">
 				          <span class="design design--1"></span>
@@ -221,27 +210,28 @@
 				      <div class="card-front">
 				        <figure>
 				          <div class="img-bg"></div>
-				          <img src="https://images.unsplash.com/photo-1486162928267-e6274cb3106f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Brohm Lake">
-				          <figcaption>Brohm Lake</figcaption>
+				         <img src="../img/flip1.jpg" alt="">
+								 <div class="card-front-text3">
+									 <h2>Soft</h2>
+									 <h2>Skills</h2>
+								 </div>
 				        </figure>
 
-				        <ul>
-				          <li>Detail 1</li>
-				          <li>Detail 2</li>
-				          <li>Detail 3</li>
-				          <li>Detail 4</li>
-				          <li>Detail 5</li>
-				        </ul>
 				      </div>
 
 				      <div class="card-back">
 				        <!-- only if the image is necessary -->
 				        <figure>
 				          <div class="img-bg"></div>
-				          <img src="https://images.unsplash.com/photo-1486162928267-e6274cb3106f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Brohm Lake">
-				        </figure>
+				          <img src="../img/flip1.jpg" alt="">
+								</figure>
 
-				        <button>Book</button>
+								<ul>
+				          <li>Efficient Communication skills</li>
+				          <li>Teamwork</li>
+				          <li>Problem Solving</li>
+				          <li>Research</li>
+				        </ul>
 
 				        <!-- can add svg here and remove these eight spans -->
 				        <div class="design-container">
@@ -260,13 +250,7 @@
 				  </div>
 				</section>
 				<!-- /flip-card-container -->
-				<section class="otherfile">
-
-				</section>
-
-
 				<!--   --------------------------------      ------------------------- -->
-			<!-- </div> -->
 		</div>
 	</div>
 </section>
@@ -275,21 +259,24 @@
 <section class="portfolio" id="portfolio">
 	<div class="container">
 		<div class="section-heading">
-			<h1>Portfolio</h1>
+			<h1>Projects</h1>
 			<h6>View some recent work</h6>
 		</div>
 		<div class="portfolio-item" >
 			<div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay = "300">
-				<img src="../img/portitem1.jpeg" alt="what">
+				<img src="../img/project1.png" alt="what">
 			</div>
 			<div class="portfolio-description" data-aos="fade-left" data-aos-delay = "600">
-				<h6>Web Development</h6>
-				<h1>Blog Website</h1>
+				<h6>Computer Vision</h6>
+				<h1>Autonomous Underwater Vehcile</h1>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit
+					I was a part of the computer science team for building an autonomous underwater project.
+					My main tasks was to work on under-water object detection and also help with the control logic.
+					The detection process was attempted with the help of OpenCV. The project was made modular
+					and we integrated sensor readings to the calibration unit with the help of ROS (Robot Operating
+					System).
 				</p>
-				<a href="#" class="cta">View Details</a>
+				<!-- <a href="#" class="cta">View Details</a> -->
 			</div>
 		</div>
 		<div class="portfolio-item">
@@ -303,7 +290,7 @@
 				<a href="#" class="cta">View Details</a>
 			</div>
 			<div class="portfolio-img" data-aos="fade-left" data-aos-delay = "1200">
-				<img src="../img/portitem2.jpeg" alt="">
+				<img src="../img/project2.png" alt="">
 			</div>
 		</div>
 		<div class="portfolio-item">
@@ -338,20 +325,6 @@
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit
 					</p>
 				</li>
-				<li class="date" data-date="2019 - Present">
-					<h1>Nothing</h1>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit
-					</p>
-				</li>
-				<li class="date" data-date="2019 - Present">
-					<h1>Nothing</h1>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit
-					</p>
-				</li>
 			</ul>
 		</div>
 	</div>
@@ -360,14 +333,35 @@
 
 <section class="contact" id="contact">
 	<div class="container">
-		<div class="snow layer1"></div>
-		<div class="snow layer2"></div>
-		<div class="snow layer3"></div>
 		<div class="section-heading">
 			<h1>Contact</h1>
 			<h6>Lets work togather</h6>
 		</div>
 		<!-- Custom made he he he coming soon-->
+		<div class="social-media">
+			<ul class="nav-list">
+				<li>
+					<a href="#" class="icon-link">
+						<i class="fab fa-facebook"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="icon-link">
+						<i class="fab fa-hackerrank"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="icon-link">
+						<i class="fab fa-github"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="icon-link">
+						<i class="far fa-envelope"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
 	</div>
 </section>
 

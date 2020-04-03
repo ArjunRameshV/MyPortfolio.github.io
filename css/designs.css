@@ -1,0 +1,30 @@
+.bar-container {
+  width: 100%;
+  background-color: #ffc266;
+}
+
+.bar-skills {
+  text-align: right;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  color:  #00203FFF;
+}
+.bar-text{
+  font-size: 88%;
+  font-color: 'black';
+}
+.bar-cplus {
+  width: 70%; background-color: #b30047;
+}
+.bar-java {
+  width: 45%; background-color: #b30047;
+}
+.bar-python {
+  width: 35%; background-color: #b30047;
+}
+.bar-js {
+  width: 35%; background-color: #b30047;
+}
+.bar-opencv {
+  width: 55%; background-color: #b30047;
+}
