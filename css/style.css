@@ -87,17 +87,17 @@ header{
 	width: 100%;
 	height: 100vh;
 }
-#particles {
+/* #particles {
   width: 100%;
   height: 100%;
   overflow: hidden;
-}
+} */
 .top-nav{
 	width: 100%;
 	height: 100vh;
 	position: fixed;
 	top: -100vh;
-	z-index: 1;
+	z-index: 50;
 	background-color: #ff99c2;
 	border-bottom-right-radius: 100%;
 	border-bottom-left-radius: 100%;
@@ -177,7 +177,7 @@ li{
 	transform: translate(-50%, -50%);
 	width: 100%;
 	text-align: center;
-	/*z-index: 1;*/
+	z-index: 1;
 }
 .landing-text h1{
 	font-size: 20rem;
@@ -509,6 +509,12 @@ li{
 		font-size: 1.4rem;
 	}
 
+	.nav-list{
+		flex-direction: column;
+	}
+	li{
+		margin: 2rem 0;
+	}
 	.nav-link{
 		font-size: 3.5rem;
 	}
