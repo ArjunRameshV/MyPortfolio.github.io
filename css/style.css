@@ -394,6 +394,9 @@ li{
 .fa-envelope:hover{
 	color:#ff0000;
 }
+.fa-linkedin-in:hover{
+	color:#4267b2;
+}
 /*End contact*/
 
 /*Start footer*/
@@ -455,7 +458,7 @@ li{
 		font-size: 1.7rem;
 	}
 
-	.nav-list{
+	.top-nav{
 		flex-direction: column;
 	}
 	li{
@@ -511,6 +514,7 @@ li{
 
 	.nav-list{
 		flex-direction: column;
+		object-fit: fill;
 	}
 	li{
 		margin: 2rem 0;
